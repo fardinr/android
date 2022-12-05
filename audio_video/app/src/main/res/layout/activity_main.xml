@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical" android:background="@color/black" tools:context=".MainActivity">
+
+    <TextView android:id="@+id/textView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30dp" android:text="Audio" android:textColor="#ED9006" android:textSize="24dp" android:textStyle="bold" android:padding="10dp"/>
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button1" style="?android:attr/buttonStyleSmall" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@+id/textView1" android:layout_alignLeft="@+id/textView1" android:textColor="@color/white" android:textSize="20dp" android:background="#6C75A8" android:layout_weight="0.3" android:padding="10dp" android:text="start" />
+
+        <Button
+            android:id="@+id/button2" style="?android:attr/buttonStyleSmall" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignTop="@+id/button1" android:layout_toRightOf="@+id/button1" android:text="Pause" android:textColor="@color/white" android:textSize="20dp" android:background="#5599CF" android:layout_weight="0.3" android:padding="10dp"/>
+
+        <Button
+            android:id="@+id/button3" style="?android:attr/buttonStyleSmall" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignTop="@+id/button2" android:layout_toRightOf="@+id/button2" android:text="Stop" android:textSize="20dp" android:textColor="@color/white" android:background="#0B3B61" android:layout_weight="0.3" android:padding="10dp"/>
+    </LinearLayout>
+
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:text="Video" android:layout_below="@+id/btnStopAud" android:layout_centerHorizontal="true" android:textStyle="bold" android:textColor="#E30953" android:textSize="20dp" android:id="@+id/tvvideo"/>
+
+    <VideoView android:id="@+id/videoView" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/tvvideo"
+
+        android:layout_gravity="center" android:layout_marginTop="20dp" android:layout_marginBottom="100dp" />
+
+
+</LinearLayout>

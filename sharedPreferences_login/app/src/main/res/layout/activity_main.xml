@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical" android:padding="20dp" android:background="@color/black" tools:context=".MainActivity">
+
+
+    <EditText android:id="@+id/usernameEditText" android:layout_width="match_parent" android:layout_height="wrap_content" android:ems="10" android:paddingBottom="20dp" android:inputType="textPersonName" android:textColor="@color/white" android:hint="Enter the username" />
+
+    <EditText android:id="@+id/passwordEditText" android:layout_width="match_parent" android:layout_height="wrap_content" android:ems="10" android:inputType="textPassword" android:paddingBottom="20dp" android:textColor="@color/white" android:hint="Enter the password"/>
+
+    <CheckBox android:id="@+id/remembermeCheckBox" android:layout_width="match_parent" android:layout_height="wrap_content" android:textColor="@color/white" android:text="Remember Me" />
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent"
+
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/loginButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1" android:background="#386307" android:text="Login" android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/clearButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1" android:background="#203309" android:text="Clear" android:textSize="20sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

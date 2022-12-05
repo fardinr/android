@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools" android:id="@+id/map" android:name="com.google.android.gms.maps.SupportMapFragment" android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical" android:layout_gravity="center" tools:context=".MainActivity" >
+
+    <TextView android:layout_width="match_parent" android:layout_height="71dp" android:fontFamily="sans-serif-black"
+        android:text="Current Location Longitude and Latitude." android:textAppearance="@style/TextAppearance.AppCompat.Large" android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/locationbtn" android:layout_width="243dp" android:layout_height="wrap_content" android:layout_margin="20dp" android:text="Get Location" android:textColor="@android:color/white" />
+
+    <TextView android:id="@+id/locationinfotv" android:layout_width="317dp" android:layout_height="329dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" android:textColor="@color/purple_700"
+        android:textSize="20sp" />
+
+</LinearLayout>
